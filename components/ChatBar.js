@@ -5,7 +5,9 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { useSelector } from "react-redux";
 import io from "socket.io-client";
 
-const socket = io.connect("http://localhost:3000");
+const socket = io("https://mind-scape-back-end.vercel.app", {
+  withCredentials: true,
+});
 
 const ChatBar = () => {
   const [openChannels, setOpenChannels] = useState([]);

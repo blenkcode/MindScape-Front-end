@@ -58,6 +58,7 @@ const SideBar = () => {
       .then((response) => response.json())
       .then((data) => {
         if (data.result) {
+          console.log(data);
           dispatch(updateContacts(data.data));
         } else {
           console.error(data.error);

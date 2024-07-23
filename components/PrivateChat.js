@@ -2,8 +2,9 @@ import React, { useEffect, useState } from "react";
 import styles from "../styles/ChatBar.module.css";
 import io from "socket.io-client";
 import { useSelector } from "react-redux";
-
-const socket = io.connect("http://localhost:3000");
+const socket = io("https://mind-scape-back-end.vercel.app", {
+  withCredentials: true,
+});
 
 const PrivateChat = ({ recipientId }) => {
   const [message, setMessage] = useState("");

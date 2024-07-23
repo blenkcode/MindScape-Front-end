@@ -3,7 +3,9 @@ import styles from "../styles/GroupChat.module.css";
 import io from "socket.io-client";
 import { useSelector } from "react-redux";
 
-const socket = io.connect("http://localhost:3000");
+const socket = io("https://mind-scape-back-end.vercel.app", {
+  withCredentials: true,
+});
 
 const GroupChat = () => {
   const projectID = useSelector((state) => state.user.value.projectID);
