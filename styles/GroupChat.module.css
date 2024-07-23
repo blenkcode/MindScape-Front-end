@@ -1,0 +1,211 @@
+.ChatContainer {
+    width: 90%;
+    height: 90%;
+   
+  
+    background-color: rgb(176, 122, 51);
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: rgba(73, 46, 111, 0.717);
+    border: solid 1px  rgb(69, 69, 69);
+
+    box-shadow: 5px 5px 6px 0px #00000075;
+    border-radius: 10px;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 4%;
+   
+   
+  }
+  
+
+  
+  .chatContent {
+  
+ /* Ajustez en fonction de vos besoins */
+  border-radius: 5px;
+    width: 98%;
+    position: absolute;
+    top: -3%;
+    height: 80.5%; /* Ajustez la hauteur selon vos besoins */
+    background-color: rgba(28, 28, 28, 0.696);
+    border: solid 2px #462660e0;;/* Ajustez la couleur selon vos besoins */
+
+    line-height: 50px; /* Ajustez pour centrer le texte verticalement */
+    z-index: 10; /* Doit être supérieur à celui de .Content */
+    overflow-y: scroll;
+    display: block;
+    
+  }
+
+  .chatContent::-webkit-scrollbar {
+    width: 0;  /* largeur de la barre de défilement */
+    height: 0; /* hauteur de la barre de défilement */
+  }
+
+  .input{
+   position: absolute;
+    width: 81%;
+    height: 10%;
+    left: 1.5%;
+    bottom: 3.5%;
+    border-radius: 20px;
+  font-size: 17px;
+  background-color: #46266084;
+  padding: 10px;
+  color: white;
+  border-bottom: solid 1px ;
+  border-left: solid 1px ;
+  background-color: rgb(255, 255, 255);
+  color:#462660; ;
+border: solid  #4626606e 2px;
+    
+  }
+  .input:focus {
+   outline: red;
+  }
+
+  .input::placeholder {
+    color:#462660; ;/* Changez la couleur selon vos besoins */
+    opacity: 0.7; /* Assurez-vous que l'opacité est définie à 1 pour éviter la transparence */
+    font-size: 12px;
+    padding-left: 20px;
+  
+  }
+
+  .send{
+    position: absolute;
+    border: none;
+    border-radius: 5px;
+    bottom: 2.5%;
+    right: 1%;
+ 
+    padding: 12px;
+  
+    font-size: 15px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    background-color: #6F577F;
+  
+    border: none;
+    height: 35px;
+    border-radius: 10px;
+  
+    cursor: pointer;
+
+
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+  width: 15%;
+  
+  height: 12%;
+  color: white;
+  background-color: #462660e0;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 0px #00000000;
+  background-color: #462660b8;;
+  color:#ffffff; ;
+border: solid  #b7b7b763 2px;
+transition: 0.5s ease-in-out;
+  }
+
+  .send:hover{
+    position: absolute;
+    border: none;
+    border-radius: 5px;
+    bottom: 2.5%;
+    right: 1%;
+ 
+    padding: 12px;
+  
+    font-size: 15px;
+    font-weight: 100;
+    letter-spacing: 2px;
+
+  
+    border: none;
+
+    border-radius: 10px;
+  
+    cursor: pointer;
+   
+
+
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+  width: 15%;
+  
+  height: 12%;
+  color: white;
+  background-color: #462660e0;
+  cursor: pointer;
+
+  background-color: #462660b8;;
+  color:#ffffff; ;
+border: solid  #b7b7b7a6 2px;
+transition: 0.5s ease-in-out;
+  }
+
+  .name{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content:space-between;
+  }
+
+  .icon{
+    color: rgb(6, 6, 6);
+  }
+
+.message{
+  color: rgb(0, 0, 0);
+list-style: none;
+margin: 0px;
+padding: 0px;
+
+  height: 40px;
+  margin: 5px;
+  position: relative;
+}
+.messageContent{
+  background-color: #ffffff;
+  width: fit-content;
+  height:30px;
+left: -25px;
+  bottom:0px
+;
+position: absolute;
+display: flex;
+align-items: center;
+padding: 15px;
+border-radius: 20px;
+}
+
+.userMessageContent{
+  background-color: #633d91;
+  width: fit-content;
+  height:19px;
+
+  bottom:0px;
+  color:white;
+;
+position: absolute;
+right: 10px;
+display: flex;
+align-items: center;
+padding: 15px;
+border-radius: 20px;
+}
+
+.title{
+padding-right: 10px;
+}
+
+.userTitle{
+  display: none;
+}

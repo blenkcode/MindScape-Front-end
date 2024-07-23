@@ -1,0 +1,46 @@
+.fichierContainer{
+    background-color: azure;
+    width: 78%;
+    height: 80%;
+    margin-bottom: 7%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(73, 46, 111, 0.717);
+    border: solid 1px  rgb(69, 69, 69);
+    padding: 1%;
+    box-shadow: 5px 5px 6px 0px #00000075;
+    border-radius: 10px;
+}
+
+.content{
+    display: flex;
+  
+    background-color: rgba(0, 0, 0, 0);
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+}
+
+.fichiersLeft{
+    background-color: rgba(28, 28, 28, 0.696);
+    color: white;
+    width: 33%;
+    margin: 1%;
+    padding: 1%;
+   
+}
+.fichiersMiddle{
+    background-color: rgba(28, 28, 28, 0.696);
+    color: white;
+    width: 33%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 1%;
+}
+.fichiersRight{
+    background-color: rgba(28, 28, 28, 0.696);
+    color: white;
+    width: 33%;
+    margin: 1%;
+    padding: 1%;
+}

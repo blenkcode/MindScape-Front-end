@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../../../.."
+		},
+		{
+			"path": "../../../../../lacapsule-fullstack-js"
+		},
+		{
+			"path": "../../../../../Carby/carby"
+		}
+	],
+	"settings": {}
+}

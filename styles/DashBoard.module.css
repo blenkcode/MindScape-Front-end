@@ -1,0 +1,151 @@
+.projectContainer{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 56% 43%;
+    background-color: rgba(63, 34, 92, 0);
+    grid-template-rows: 60% 20% 20% ;
+}
+
+.taches{
+    grid-column-start: 1;
+    grid-column-end: 2 ;
+    grid-row-start: 1;
+    grid-row-end: 4 ;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    margin-left: 
+    30px;
+}
+.calendrierContainer{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    /* background-color: rgb(127, 174, 255); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-right: 3%;
+}
+.fichiers{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start:3 ;
+    grid-row-end:4 ;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.chat{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    margin-bottom: 60px;
+    margin-right: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section1{
+    background-color: rgba(73, 46, 111, 0.717);
+    display: flex;
+    border-radius: 10px;
+    border: solid 1px  rgb(69, 69, 69);
+    flex-direction: column;
+    align-items: center;
+    width: 24%;
+    height: 100%;
+    padding: 0px;
+  
+    margin-right: 3%;
+    box-shadow: 5px 5px 6px 0px #00000075;
+ 
+ 
+   
+}
+.section2{
+    background-color: rgba(73, 46, 111, 0.717);
+    display: flex;
+    border-radius: 10px;
+    border: solid 1px  rgb(69, 69, 69);
+    flex-direction: column;
+    align-items: center;
+    width: 24%;
+    height: 100%;
+    padding: 0px;
+    margin-left: 3%;
+    margin-right: 3%;
+    box-shadow: 5px 5px 6px 0px #00000075;
+
+ 
+}
+.section3{
+    background-color: rgba(73, 46, 111, 0.717);
+    display: flex;
+    border-radius: 10px;
+    border: solid 1px  rgb(69, 69, 69);
+    flex-direction: column;
+    align-items: center;
+    width: 24%;
+    height: 100%;
+    padding: 0px;
+margin-left: 3%;
+
+
+    box-shadow: 5px 5px 6px 0px #00000075;
+
+ 
+}
+.calendrier{
+
+}
+
+.titleSection{
+    width: 94%;
+    color: white;
+    font-size: 19px;
+    border: solid 1px  rgb(69, 69, 69);
+    font-weight: 200;
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.638);
+    margin: 8px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.plusContainer{
+ 
+    background-color: rgba(255, 255, 255, 0.613);
+    color:  rgb(0, 0, 0);;
+    width: 15%;
+    height: 110%;
+    display: flex;
+    align-items: center;
+ 
+    justify-content: center;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.5s ease-out;
+}
+
+.plusContainer:hover{
+    background-color: rgba(102, 60, 156, 0.552);
+    color:  rgb(243, 243, 243);;
+    width: 15%;
+    height: 110%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.5s ease-out;
+}

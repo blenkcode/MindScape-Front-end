@@ -1,0 +1,737 @@
+.main {
+  display: flex;
+width: 100%;
+  /* justify-content: center; */
+  /* align-items: center; */
+  min-height: 100vh;
+  background-image: url('/finalarrows.png');
+    background-attachment:initial; /* Ajoutez cette ligne */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center ; 
+    
+
+}
+
+.headerInscription{
+  position: fixed;
+  bottom: 16%;
+  left: 7.5%;
+  width: 30%;
+
+  padding: 15px;
+  height: 160px;
+  background-color: #f7f7f7c2;
+  border-radius: 15px;
+  box-shadow: 0px 0px 70px 10px #d1d1d13b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.7s ease-out;
+  z-index: 10;
+
+}
+.headerInscriptionHidden{
+  position: fixed;
+  border-radius: 105px;
+  bottom: 15%;
+  left: 0%;
+  width: 50%;
+  height: 20px;
+  padding: 15px;
+  height: 200px;
+  background-color: #4626606a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: 0.8s ease-out;
+  opacity: 0;
+
+}
+
+.headerInscription input{
+  border: none;
+  padding: 12px;
+  width: 150px;
+  margin: 10px;
+  height: 35px;
+  border-radius: 20px;
+  font-size: 14px;
+  background-color: #46266084;
+  color: white;
+  border-bottom: solid 1px ;
+  border-left: solid 1px ;
+  background-color: rgb(255, 255, 255);
+  color:#462660; ;
+border: solid  #4626606e 2px;
+}
+
+.inputHidden{
+  border: none;
+  padding: 12px;
+  width: 100px;
+  margin: 20px;
+  font-size: 20px;
+  background-color: #46266084;
+  color: white;
+  border-bottom: solid 1px ;
+  border-left: solid 1px ;
+  background-color: rgb(255, 255, 255);
+  color:#462660; ;
+border: solid  #462660 2px;
+opacity: 0;
+}
+
+.headerInscription button{
+  
+  padding: 12px;
+  width: 100px;
+  font-size: 17px;
+  background-color: #6F577F;
+
+  border: none;
+  height: 35px;
+  border-radius: 18px;
+
+  cursor: pointer;
+  box-shadow: 0px 0px 70px 30px #0000001d;
+  background-color: #462660b8;;
+  color:#ffffff; ;
+border: solid  #46266063 2px;
+display: flex;
+justify-content:center ;
+align-items: center;
+width: 150px;
+margin: 10px;
+height: 35px;
+ 
+
+}
+.headerInscription input::placeholder {
+  color:#462660; ;/* Changez la couleur selon vos besoins */
+  opacity: 0.7; /* Assurez-vous que l'opacité est définie à 1 pour éviter la transparence */
+  font-size: 16px;
+}
+.registerContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.registerTitle{
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+  font-size: 20px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  padding-top: 0px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.registerHidden{
+ 
+  display: none;
+}
+.loginContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.loginTitle{
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+  margin-bottom: 25px;
+  font-size: 20px;
+  margin-left: 12px;
+  padding: 0px;
+}
+
+.loginHidden{
+  display: none;
+}
+.headerConnexion{
+
+  position: fixed;
+  bottom: 16%;
+  left: 7.5%;
+  width: 30%;
+
+  padding: 0px;
+  height: 160px;
+  background-color: #f7f7f7c2;
+  border-radius: 15px;
+  box-shadow: 0px 0px 70px 10px #d1d1d13b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.7s ease-out;
+  z-index: 10;
+
+}
+.headerConnexionHidden{
+  position: fixed;
+  bottom: 15%;
+  left: 0%;
+ border-radius: 20%;
+ 
+  width: 10%;
+  padding: 15px;
+  height: 200px;
+  background-color: #4626606a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+transform: translateY(100%);
+  transition: 0.8s ease-out;
+  opacity: 0;
+
+}
+
+.headerConnexion input{
+  border: none;
+  padding: 12px;
+  width: 150px;
+  margin: 10px;
+  height: 35px;
+  border-radius: 20px;
+  font-size: 14px;
+  background-color: #46266084;
+  color: white;
+  border-bottom: solid 1px ;
+  border-left: solid 1px ;
+  background-color: rgb(255, 255, 255);
+  color:#462660; ;
+border: solid  #4626606e 2px;
+
+}
+
+.headerConnexion button{
+  
+  padding: 12px;
+  width: 100px;
+  font-size: 17px;
+  background-color: #6F577F;
+
+  border: none;
+  height: 35px;
+  padding: 12px;
+  width: 100px;
+  border-radius: 18px;
+
+  cursor: pointer;
+  box-shadow: 0px 0px 70px 30px #0000001d;
+  background-color: #462660b8;;
+  color:#ffffff; ;
+
+display: flex;
+justify-content:center ;
+align-items: center;
+width: 150px;
+margin: 10px;
+height: 35px;
+ 
+
+}
+.headerConnexion input::placeholder {
+  color:#462660; ;/* Changez la couleur selon vos besoins */
+  opacity: 0.7; /* Assurez-vous que l'opacité est définie à 1 pour éviter la transparence */
+  font-size: 16px;
+
+}
+
+.inputcontainer{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+
+.rightSection{
+ display: flex;
+ flex-direction: column;
+  width: 35%;
+  margin-left: 50px;
+  padding-left: 30px;
+}
+
+.leftSection{
+  background-color: #281538ae;
+  left: 0px;
+  cursor: default;
+ 
+ height: 1%8;
+  box-shadow: 0px 0px 70px 30px #d1d1d16b;
+  margin: 0px;
+  padding-left: 80px;
+width: 45%;
+margin-left: 0px;
+
+;
+font-size: 30px;
+}
+.leftSection h1{
+
+  font-size: 130px;
+width: 100%;
+letter-spacing: 9px;
+margin: 0px;
+font-weight: 500;
+padding-top: 40px;
+
+}
+
+.leftSection p{
+  color: rgb(255, 255, 255);
+  padding-bottom: 40px;
+  font-size: 22px;
+  margin-left: 1%;
+  margin-top: 10px;
+  margin-bottom: 55px;
+  width: 100%;
+}
+.taches{
+  color: rgb(255, 255, 255);
+  padding-bottom: 40px;
+  font-size: 23px;
+font-weight: 200;
+  margin-left: 30px;
+  width: 80%;
+
+
+
+}
+
+.tache{
+  margin-bottom: 25px;
+  display: flex;
+  opacity: 0;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.2s ease-out;
+  opacity: 0;
+  animation: tachesfadein 1s ease-in-out forwards;;
+  animation-delay: 0.3s;
+}
+.tache1{
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+opacity: 0;
+  animation: tachesfadein 1s ease-in-out forwards;
+  transition: 0.2s ease-out;
+
+  animation-delay: 0.4s;
+  
+}
+.tache1:hover{
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+transition: 0.2s ease-out;
+color: #a48eb5;
+
+
+
+  
+}
+.tache:hover{
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+transition: 0.2s ease-out;
+color: #a48eb5;
+
+
+
+  
+}
+.tache2:hover{
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+transition: 0.2s ease-out;
+color: #a48eb5;
+
+
+
+  
+}
+.tache3:hover{
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+transition: 0.2s ease-out;
+color: #a48eb5;
+
+
+
+  
+}
+.tache2{
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0;
+  animation: tachesfadein 1s ease-in-out forwards;
+  transition: 0.2s ease-out;
+  animation-delay: 0.5s;
+}
+.tache3{
+  margin-bottom: 25px;
+  display: flex;
+  opacity: 0;
+  justify-content: space-between;
+  align-items: center;
+  animation: tachesfadein 1s ease-in-out forwards;
+  transition: 0.2s ease-out;
+  animation-delay: 0.6s;
+}
+
+.icons {
+  font-size: 35px;
+  animation-duration: 1s;
+  animation: iconsfadein 1s ease-in-out forwards;
+  animation-delay: 2s;
+  opacity: 0; /* Initial opacity set to 0 */
+}
+
+.lines{
+  height: 1px;
+  background-color: white;
+  content: "";
+  opacity: 0;
+  width: 45%;
+  animation-duration: 2s;
+  animation: linefadein  2s ease-in-out forwards;
+  animation-delay: 0.8s;
+  
+}
+.lines1{
+  height: 1px;
+  background-color: white;
+  content: "";
+  width: 68%;
+  opacity: 0;
+  animation: line1fadein 2s ease-in-out;
+  animation: line1fadein  2s ease-in-out forwards;
+  animation-delay: 0.8s;
+}
+.lines2{
+  opacity: 0;
+  height: 1px;
+  background-color: white;
+  content: "";
+  width: 58%;
+  animation-duration: 2.5s;
+  animation: line2fadein  2s ease-in-out forwards;
+  animation-delay: 0.8s;
+  margin-right: 5px;
+}
+.lines3{
+  opacity: 0;
+  height: 1px;
+  background-color: white;
+  animation-duration: 2.5s;
+  content: "";
+  width: 59%;
+  animation: line3fadein  2s ease-in-out forwards;
+  animation-delay: 0.8s;
+
+}
+
+
+.subtitle{
+  display: inline-block;
+  transform: translateX(-110%);
+
+  animation: titlefadein 1s ease-in-out forwards;
+  animation-delay: 0.1s;
+}
+.span{
+  /* background-color: blue; */
+  display: inline-block;
+
+  animation: titlefadein 1s ease-in-out;
+}
+@keyframes iconsfadein{
+  0%{
+   
+    opacity: 0;
+  }
+  100%{
+  
+    opacity: 1;
+  }
+}
+@keyframes titlefadein{
+  0%{
+    transform: translateX(-110%);
+    opacity: 0;
+  }
+  100%{
+    transform : translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes tachesfadein{
+  0%{
+    transform: translateX(-110%);
+    opacity: 0;
+  }
+  100%{
+    transform : translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes linefadein{
+  0%{
+    width: 0%;
+    opacity: 0;
+  }
+  100%{
+    width: 45%;
+    opacity: 1;
+  }
+}
+@keyframes line1fadein{
+  0%{
+    width: 0%;
+    opacity: 0;
+  }
+  100%{
+    width: 68%;
+    opacity: 1;
+  }
+}
+@keyframes line2fadein{
+  0%{
+    width: 0%;
+    opacity: 0;
+  }
+  100%{
+    width: 58%;
+    opacity: 1;
+  }
+}
+@keyframes line3fadein{
+  0%{
+    width: 0%;
+    opacity: 0;
+  }
+  100%{
+    width: 59%;
+    opacity: 1;
+  }
+}
+
+.titleMain{
+  font-size: 100px;
+  font-weight: 400;
+  color: #7d4ba5;
+
+  width: 100%;
+
+
+}
+.titleMain span{
+color: white;
+}
+
+.login{
+  width: 300px;
+  height: 300px;
+  background-color: #46266084;
+  border: solid 2px;
+  border-radius: 4px;
+  font-size: 50px;
+  color: white;
+  position: relative;
+  margin-bottom: 80px;
+}
+.register{
+  width: 300px;
+  height: 300px;
+  background-color: #46266084;
+  border: solid 2px;
+  border-radius: 4px;
+  font-size: 50px;
+  color: white;
+}
+
+
+
+
+.Card1{
+  background-color: #462660cc;
+height: 140px;
+width: 144px;
+border: solid   rgb(159, 159, 159) 2px;
+margin-bottom: 80px;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: 1s ease-out;
+border-radius: 5px;
+transform: rotateX(50deg) rotateY(0deg) rotateZ(45deg);
+position: fixed;
+top: 8.4%;
+font-size: 40px;
+color: #ffffff;
+left: 62.2%;
+box-shadow: 0px 0px 70px 30px #bfbfbf98;
+cursor: pointer;
+
+}
+
+.Card2{
+  background-color: #462660d4;
+  height: 92px;
+  width: 92px;
+  border: solid   rgb(159, 159, 159) 2px;
+  margin-bottom: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 1s ease-out;
+  border-radius: 5px;
+  transform: rotateX(50deg) rotateY(0deg) rotateZ(43deg);
+  position: fixed;
+top: 37.9%;
+color: #ffffff;
+left: 69.42%;
+box-shadow: 0px 0px 70px 30px #bfbfbf98;
+cursor: pointer;
+}
+
+.Card1:hover{
+  background-color: rgba(255, 255, 255, 0.342);
+height: 140px;
+width: 144px;
+color:#462660; ;
+border: solid  #462660 2px;
+margin-bottom: 80px;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: 1s ease-out;
+border-radius: 5px;
+transform: rotateX(50deg) rotateY(0deg) rotateZ(45deg);
+position: fixed;
+top: 8.4%;
+left: 62.2%;
+box-shadow: 0px 0px 70px 30px #838383;
+cursor: pointer;
+
+}
+
+.Card2:hover{
+  background-color: rgba(255, 255, 255, 0.342);
+  height: 92px;
+  width: 92px;
+  border: solid  #462660 2px;
+  margin-bottom: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 1s ease-out;
+  border-radius: 5px;
+  transform: rotateX(50deg) rotateY(0deg) rotateZ(43deg);
+  position: fixed;
+top: 37.9%;
+color:#462660; ;
+left: 69.42%;
+box-shadow: 0px 0px 70px 30px #838383;
+cursor: pointer;
+
+}
+
+
+
+.M:hover{
+  transition: 0.2s ease-out;
+color: #a48eb5;
+}
+.i:hover{
+  transition: 0.2s ease-out;
+color: #a48eb5;
+}
+.n:hover{
+  transition: 0.2s ease-out;
+color: #a48eb5;
+}
+.d:hover{
+  transition: 0.2s ease-out;
+color: #a48eb5;
+}
+.S:hover{
+  transition: 0.2s ease-out;
+color: #a48eb5;
+}
+.c:hover{
+  transition: 0.2s ease-out;
+color: #a48eb5;
+}
+.a:hover{
+  transition: 0.2s ease-out;
+color: #a48eb5;
+}
+.p:hover{
+  transition: 0.2s ease-out;
+color: #a48eb5;
+}
+.e:hover{
+  transition: 0.2s ease-out;
+color: #a48eb5;
+}
+
+.M{
+  transition: 3.2s ease-out;
+
+}
+.i{
+  transition: 1.5s ease-out;
+
+}
+.n{
+  transition: 0.9s ease-out;
+
+}
+.d{
+  transition: 1.3s ease-out;
+
+}
+.S{
+  transition: 1.7s ease-out;
+
+}
+.c{
+  transition: 1s ease-out;
+
+}
+.a{
+  transition: 1.8s ease-out;
+
+}
+.p{
+  transition: 2s ease-out;
+
+}
+.e{
+  transition: 0.6s ease-out;
+}
+
+.btn{
+  font-size: 15px;
+  letter-spacing: 0px;
+  margin-right: 15px;
+}

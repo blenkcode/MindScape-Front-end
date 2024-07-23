@@ -1,0 +1,45 @@
+.main {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template-columns: 17% 83%;
+  grid-template-rows: 93% 7%;
+  position: relative; /* Ajouté pour positionner correctement les enfants */
+}
+
+.sidebar {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background-color: rgb(50, 50, 50);
+  box-shadow: 2px 4px 50px 50px #00000038;
+}
+
+.FootChat {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-color: rgb(50, 50, 50);
+  position: relative; /* Ajouté pour que les enfants puissent utiliser z-index */
+  z-index: 2; /* Doit être inférieur à celui de .chatContent */
+}
+
+.Content {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  z-index: 1; /* Assurez-vous que cela soit inférieur à celui de .chatContent */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; 
+  background-image: url('/bgdash.jpeg');
+  background-attachment:initial; /* Ajoutez cette ligne */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center ; /* Ajouté pour que les enfants puissent utiliser z-index */
+}
+

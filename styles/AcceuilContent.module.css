@@ -1,0 +1,50 @@
+.cardsContainer {
+    display: flex;
+  }
+  
+  .Card1,
+  .Card2 {
+    background-color: #462660b0;
+    height: 300px;
+    width: 300px;
+    border: solid rgba(0, 0, 0, 0.741) 0.6rem;
+    margin-bottom: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease-out;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 300;
+    flex-direction: column;
+    display: flex;
+   align-items: center;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  .Card1Modal,
+  .Card2Modal {
+  display: none;
+  }
+  
+  .Card1 {
+    margin-right: 250px;
+  }
+  
+  .Card1:hover,
+  .Card2:hover {
+    background-color: rgba(255, 255, 255, 0.609);
+    color: #462660;
+    border: solid #462660 0.6rem;
+    box-shadow: 0px 0px 70px 30px #83838398;
+  }
+
+  .icon{
+    font-size: 80px;
+    font-weight: 300 ;
+    padding: 30px;
+  }
+.modal{
+  position: absolute;
+  left: 50%;
+}

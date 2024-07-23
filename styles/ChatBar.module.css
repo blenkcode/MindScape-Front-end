@@ -1,0 +1,198 @@
+.ChatBar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 1px;
+   
+  }
+  
+  .channels {
+    background-color: rgba(0, 0, 0, 0.555);
+    width: 280px;
+    height: 65%;
+    margin-left: 10px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    padding-right: 15px;
+    font-size: 18px;
+   border-radius: 25px;
+border: white 1px solid;
+    position: relative; /* Nécessaire pour que chatContent soit positionné par rapport à cette div */
+  }
+
+  .channelsOpen {
+    background-color: rgba(0, 0, 0, 0.555);
+    width: 280px;
+    height: 65%;
+    margin-left: 10px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    padding-right: 15px;
+    font-size: 18px;
+   border-radius: 25px;
+   border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    position: relative; /* Nécessaire pour que chatContent soit positionné par rapport à cette div */
+    
+  }
+  
+  
+  .close {
+    background-color: rgb(160, 164, 164);
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    font-size: 25px;
+    padding: 0px;
+  }
+  .contentContainer{
+    position: absolute;
+    bottom: 100%; /* Ajustez en fonction de vos besoins */
+    left: 0%;
+    width: 100%;
+    height: 280px; /* Ajustez la hauteur selon vos besoins */
+    background-color: #4d3768; 
+    border: solid 5px rgba(0, 0, 0, 0.555);
+    border-bottom: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px
+    ; padding : 5px;/* Ajustez la couleur selon vos besoins */
+
+    line-height: 50px; /* Ajustez pour centrer le texte verticalement */
+    z-index: 10;
+    box-shadow: 0px 0px 50px 10px #00000059;
+    display: flex;
+    flex-direction: column
+  }
+  .chatContent {
+  border-radius: 5px;
+  height: 100%;
+  width: 100%;
+    padding : 10px;/* Ajustez la couleur selon vos besoins */
+overflow-Y: scroll;
+background-color: #0000005b;
+   /* Doit être supérieur à celui de .Content */
+  }
+
+  .chatContent::-webkit-scrollbar {
+    width: 0;  /* largeur de la barre de défilement */
+    height: 0; /* hauteur de la barre de défilement */
+  }
+.inputContainer{
+display: flex;
+justify-content: center;
+align-items: center;
+  bottom: 100%;
+  width: 100%;
+  height: 55px;
+  z-index: 10;
+}
+  .input{
+    position: absolute;
+    bottom: 4.5%;
+    left: 3%;
+    width: 73%;
+    border-radius: 20px;
+    height: 9%;
+    border-radius: 20px;
+    font-size: 13px;
+    background-color: #46266084;
+    color: white;
+    border-bottom: solid 1px ;
+    border-left: solid 1px ;
+    background-color: rgb(255, 255, 255);
+    color:#462660; ;
+    padding-left: 8px;
+  border: solid  #4626606e 2px;
+  }
+  .input:focus {
+   outline: red;
+  }
+
+  .input::placeholder{
+    font-size: 17px;
+  }
+
+  .send{
+    position: absolute;
+    border: none;
+    border-radius: 5px;
+    bottom: 
+    3.5%;
+    right: 3%;
+    width: 18%;
+    height: 11%;;
+    color: white;
+    background-color: #462660e0;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px #00000000;
+    background-color: #462660b8;;
+    color:#ffffff; ;
+  border: solid  #b7b7b763 2px;
+  }
+
+  .name{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content:space-between;
+  }
+
+  .icon{
+    color: rgb(255, 255, 255);
+  }
+
+  .messageContent {
+    background-color: #ffffff;
+    width: fit-content;
+    height: 30px;
+    color: black;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    font-size: 13px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .userMessageContent {
+    background-color: #633d91;
+    width: fit-content;
+    height: 20px;
+    font-size: 13px;
+    color: white;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 20px;
+
+  }
+  
+  .userMessageContainer {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .receiverMessageContainer {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .title {
+    padding-right: 10px;
+  }
+  
+  .userTitle {
+    display: none;
+  }

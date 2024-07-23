@@ -1,0 +1,74 @@
+
+
+.CardsContainer{
+  
+    
+ 
+    border-radius: 4px;
+    font-size: 40px;
+    color: white;
+   
+  
+}
+
+.name{
+    width: 100%;
+    height: 100%;
+    
+}
+.Card1{
+    background-color: #46266084;
+height: 140px;
+width: 144px;
+border: solid   rgb(159, 159, 159) 2px;
+margin-bottom: 80px;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: 1s ease-out;
+border-radius: 5px;
+transform: rotateX(50deg) rotateY(0deg) rotateZ(45deg);
+position: fixed;
+top: 8.4%;
+left: 62.2%;
+
+}
+
+.Card2{
+    background-color: #46266084;
+    height: 240px;
+    width: 240px;
+    border: solid   rgb(159, 159, 159) 2px;
+    margin-bottom: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s ease-out;
+    border-radius: 5px;
+}
+
+.Card1:hover{
+    background-color: #462660c9;
+    transition: 1s ease-out;
+height: 240px;
+width: 240px;
+border: solid 2px;
+margin-bottom: 80px;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+.Card2:hover{
+    background-color: #462660c9;
+    transition: 1s ease-out;
+height: 240px;
+width: 240px;
+border: solid 2px;
+margin-bottom: 80px;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}

@@ -1,0 +1,83 @@
+.btn {
+    position: relative;
+  
+    height: 35px;
+    padding: 12px;
+    width: 140px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.184);
+    color: #6F577F;
+    text-decoration: none;
+    letter-spacing: 1px;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow: 0px 0px 70px 30px #00000000;
+    border: solid  #46266063 4px;
+    margin-left: 15px;
+    display: flex;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+  }
+  .btn:hover{
+    position: relative;
+  
+    height: 35px;
+    padding: 12px;
+    width: 140px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.189);
+    color: #ffffff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow: 0px 0px 70px 30px #00000000;
+    border: solid  #46266063 4px;
+    margin-left: 15px;
+    display: flex;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+  }
+  .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -10px;
+    transform: translate(0px, -30px );
+
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #6F577F;
+    transition: width 1s, height 1s ;
+
+  }
+  
+  .btn:hover::before {
+    width: 170px;
+    height: 130px;
+    transform: translate(0px, -30px );
+    transition: width 1s, height 1s ;
+   
+    left:-10px;
+
+  }
+  
+  .btn span {
+    position: relative;
+    z-index: 1;
+  }
+
+  .body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+

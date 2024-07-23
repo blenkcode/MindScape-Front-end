@@ -1,0 +1,241 @@
+.sidebar{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 28% 28% 34%;
+    padding-bottom: 10%;
+  
+}
+
+.section1{
+   
+    grid-column-start:  1 ;
+    grid-column-end: 2;
+    grid-row-start:2;
+    grid-row-end: 4;
+    display: flex;
+    justify-content: center;
+   
+    
+}
+
+.section3{
+
+    grid-column-start:  1 ;
+    grid-column-end: 2;
+    grid-row-start:4;
+    grid-row-end: 5;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.content{
+    background-color: rgb(55, 55, 55);
+    width: 100%;
+    list-style: none;
+    overflow-y: scroll;
+    margin-left: 0px;
+    height: 92%;
+    border-radius: 5px;
+    padding: 10px;
+   
+}
+
+.contentChat{
+    background-color: rgb(55, 55, 55);
+    width: 100%;
+    list-style: none;
+    overflow-y: scroll;
+    margin-left: 0px;
+    height: 86%;
+    border-radius: 5px;
+    padding: 10px;
+   
+}
+.content::-webkit-scrollbar {
+    width: 0;  /* largeur de la barre de défilement */
+    height: 0; /* hauteur de la barre de défilement */
+  }
+
+  .contentChat::-webkit-scrollbar {
+    width: 0;  /* largeur de la barre de défilement */
+    height: 0; /* hauteur de la barre de défilement */
+  }
+.contentContainer{
+    background-color: rgb(9, 9, 9);
+    width: 85%;
+    list-style: none;
+    border-radius: 15px;
+   height: 95%;
+    margin-left: 0px;
+    padding: 10px;
+    box-shadow: 2px 4px 6px 0px #00000038;
+}
+
+.infos{
+    grid-column-start:  1 ;
+    grid-column-end: 2;
+    grid-row-start:1;
+    grid-row-end: 2;
+    display: flex;
+    align-items: center;
+    padding: 10%;
+    color: white;
+    font-size: 25px;
+}
+
+.contact{
+    margin-left: 20px;
+    background-color: rgba(255, 255, 255, 0.267);
+    padding: 10px;
+    font-size: 19px;
+    border-radius: 50%;
+    transition :0.3s ease-out;
+    cursor: pointer;
+}
+
+.logout{
+    margin-left: 20px;
+    background-color: rgba(255, 255, 255, 0.267);
+    padding: 10px;
+    font-size: 19px;
+    border-radius: 50%;
+    transition :0.3s ease-out;
+    cursor: pointer;
+}
+.logout:hover{
+    margin-left: 20px;
+    background-color: rgba(255, 255, 255, 0.466);
+
+    padding: 10px;
+    font-size: 19px;
+    border-radius: 50%;
+}
+.contact:hover{
+    margin-left: 20px;
+    background-color: rgba(255, 255, 255, 0.466);
+
+    padding: 10px;
+    font-size: 19px;
+    border-radius: 50%;
+}
+
+.name{
+    color: white;
+    font-size: 20px;
+}
+
+.li{
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 10px;
+    padding:7px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.092);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 4px 4px 0px #00000012;
+    transition: 0.2s ease-out;
+    position: relative;
+}
+
+.li:hover{
+    transition: 0.1s ease-out;
+    color: rgb(98, 45, 136);
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 10px;
+    padding:7px;
+    box-shadow: 2px 4px 4px 0px #f9f9f90f;
+    background-color: rgba(255, 255, 255, 0.669);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+
+.active{
+    transition: 0.1s ease-out;
+    color: rgb(98, 45, 136);
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 10px;
+    padding:7px;
+    box-shadow: 2px 4px 4px 0px #f9f9f90f;
+    background-color: rgba(255, 255, 255, 0.868);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+
+.title{
+    color: white;
+    padding-left: 5px;
+    font-size: 20px;
+    display: flex;
+    font-weight: 200;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.ellipsis{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+  .dropdown {
+    position: absolute;
+    top: 24px;
+    right: 0;
+    background: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .dropdownItem {
+    padding: 8px 12px;
+    cursor: pointer;
+    color: black;
+  }
+  
+  .dropdownItem:hover {
+    background: #f5f5f5;
+  }
+  .confirmDelete {
+    display: flex;
+    align-items: center;
+  }
+  
+  .confirmDeleteBtn {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: rgb(137, 137, 137);
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  .iconco{
+    margin-right: 3px;
+  }
+
+.icon{
+    margin-right: 3px;
+}
