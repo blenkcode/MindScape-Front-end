@@ -197,9 +197,7 @@ function Home() {
           </div>
         </div>
         <div className={styles.leftSection}>
-          <div className={styles.rectangle1}></div>
           <h1 className={styles.titleMain}>
-            {" "}
             <span className={styles.span}>
               <span className={styles.M}>M</span>
               <span className={styles.i}>i</span>
