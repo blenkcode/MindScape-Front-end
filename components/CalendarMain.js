@@ -28,7 +28,7 @@ const CalendarMain = () => {
 
     // Send the updated events to the backend
     fetch(
-      `https://mind-scape-back-end.vercel.app/projects/updateEvents/${projectID}`,
+      `https://mindscapebackend-9f2c807f920b.herokuapp.com/projects/updateEvents/${projectID}`,
       {
         method: "PUT",
         headers: {
@@ -61,7 +61,7 @@ const CalendarMain = () => {
 
   useEffect(() => {
     fetch(
-      `https://mind-scape-back-end.vercel.app/projects/getProjectsEvents/${projectID}`
+      `https://mindscapebackend-9f2c807f920b.herokuapp.com/projects/getProjectsEvents/${projectID}`
     )
       .then((response) => {
         if (!response.ok) {

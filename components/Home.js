@@ -47,7 +47,7 @@ function Home() {
   }, [user, router]);
 
   const handleRegister = () => {
-    fetch("https://mind-scape-back-end.vercel.app/users/signup", {
+    fetch("https://mindscapebackend-9f2c807f920b.herokuapp.com/users/signup", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name, password, email }),
@@ -77,7 +77,7 @@ function Home() {
   };
 
   const handleConnexion = () => {
-    fetch("https://mind-scape-back-end.vercel.app/users/signin", {
+    fetch("https://mindscapebackend-9f2c807f920b.herokuapp.com/users/signin", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ emailLogin, passwordLogin }),

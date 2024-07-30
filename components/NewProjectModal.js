@@ -30,11 +30,14 @@ const NewProjectModal = ({ isVisible, onClose, children }) => {
       team: team,
     };
     console.log("membersid : ", memberIds);
-    fetch(`https://mind-scape-back-end.vercel.app/projects/createProject`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(projectData),
-    })
+    fetch(
+      `https://mindscapebackend-9f2c807f920b.herokuapp.com/projects/createProject`,
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(projectData),
+      }
+    )
       .then((response) => response.json())
       .then((data) => {
         if (data.result) {

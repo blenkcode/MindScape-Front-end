@@ -18,7 +18,7 @@ const GroupChat = () => {
     const fetchMessages = async () => {
       try {
         const response = await fetch(
-          `https://mind-scape-back-end.vercel.app/api/messages/${projectID}`
+          `https://mindscapebackend-9f2c807f920b.herokuapp.com/api/messages/${projectID}`
         );
         const data = await response.json();
         setMessages(data);

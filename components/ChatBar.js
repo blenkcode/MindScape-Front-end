@@ -5,7 +5,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { useSelector } from "react-redux";
 import io from "socket.io-client";
 
-const socket = io("https://mind-scape-back-end.vercel.app", {
+const socket = io("https://mindscapebackend-9f2c807f920b.herokuapp.com", {
   withCredentials: true,
 });
 
@@ -27,7 +27,7 @@ const ChatBar = () => {
       if (!activeChat) return;
       try {
         const response = await fetch(
-          `https://mind-scape-back-end.vercel.app/api/private-messages/${userId}/${activeChat}`
+          `https://mindscapebackend-9f2c807f920b.herokuapp.com/api/private-messages/${userId}/${activeChat}`
         );
         if (response.ok) {
           const data = await response.json();

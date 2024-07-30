@@ -20,11 +20,14 @@ const ContactModal = ({ isVisible, onClose, children }) => {
   const dispatch = useDispatch();
 
   const handleAddContact = () => {
-    fetch(`https://mind-scape-back-end.vercel.app/users/addContact/${token}`, {
-      method: "PUT",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ userEmail }), // Send email as part of an object
-    })
+    fetch(
+      `https://mindscapebackend-9f2c807f920b.herokuapp.com/users/addContact/${token}`,
+      {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ userEmail }), // Send email as part of an object
+      }
+    )
       .then((response) => response.json())
       .then((data) => {
         if (!data.result) {

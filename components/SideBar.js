@@ -38,7 +38,7 @@ const SideBar = () => {
 
   useEffect(() => {
     fetch(
-      `https://mind-scape-back-end.vercel.app/projects/getAllProjects/${token}`
+      `https://mindscapebackend-9f2c807f920b.herokuapp.com/projects/getAllProjects/${token}`
     )
       .then((response) => response.json())
       .then((data) => {
@@ -54,7 +54,7 @@ const SideBar = () => {
   }, [token, reload]);
 
   useEffect(() => {
-    fetch(`https://mind-scape-back-end.vercel.app/users/${token}`)
+    fetch(`https://mindscapebackend-9f2c807f920b.herokuapp.com/users/${token}`)
       .then((response) => response.json())
       .then((data) => {
         if (data.result) {
@@ -111,7 +111,7 @@ const SideBar = () => {
 
     const projectId = id;
     fetch(
-      `https://mind-scape-back-end.vercel.app/projects/deleteProject/${projectId}`,
+      `https://mindscapebackend-9f2c807f920b.herokuapp.com/projects/deleteProject/${projectId}`,
       {
         method: "DELETE",
         headers: { "Content-Type": "application/json" },
@@ -135,7 +135,7 @@ const SideBar = () => {
     const contactID = id;
 
     fetch(
-      `https://mind-scape-back-end.vercel.app/users/deleteContact/${contactID}/${token}`,
+      `https://mindscapebackend-9f2c807f920b.herokuapp.com/users/deleteContact/${contactID}/${token}`,
       {
         method: "DELETE",
         headers: { "Content-Type": "application/json" },

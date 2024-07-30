@@ -16,7 +16,7 @@ function Projects() {
 
   useEffect(() => {
     fetch(
-      `https://mind-scape-back-end.vercel.app/projects/getAllProjects/${token}`
+      `https://mindscapebackend-9f2c807f920b.herokuapp.com/projects/getAllProjects/${token}`
     )
       .then((response) => response.json())
       .then((data) => {

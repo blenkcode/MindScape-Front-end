@@ -16,7 +16,7 @@ const PrivateChat = ({ recipientId }) => {
     const fetchMessages = async () => {
       try {
         const response = await fetch(
-          `https://mind-scape-back-end.vercel.app/api/private-messages/${senderId}/${recipientId}`
+          `https://mindscapebackend-9f2c807f920b.herokuapp.com/api/private-messages/${senderId}/${recipientId}`
         );
         const data = await response.json();
         setMessages(data);

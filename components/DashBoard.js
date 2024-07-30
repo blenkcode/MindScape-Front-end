@@ -27,7 +27,7 @@ function DashBoard() {
 
   useEffect(() => {
     fetch(
-      `https://mind-scape-back-end.vercel.app/projects/getProjectTasks/${projectID}/tasks`
+      `https://mindscapebackend-9f2c807f920b.herokuapp.com/projects/getProjectTasks/${projectID}/tasks`
     )
       .then((response) => {
         if (!response.ok) {
@@ -49,7 +49,7 @@ function DashBoard() {
 
   const updateProjectTasks = (tasks) => {
     fetch(
-      `https://mind-scape-back-end.vercel.app/projects/updateTask/${projectID}`,
+      `https://mindscapebackend-9f2c807f920b.herokuapp.com/projects/updateTask/${projectID}`,
       {
         method: "PUT",
         headers: {
