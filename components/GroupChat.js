@@ -3,7 +3,7 @@ import styles from "../styles/GroupChat.module.css";
 import io from "socket.io-client";
 import { useSelector } from "react-redux";
 
-const socket = io("https://mind-scape-back-end.vercel.app", {
+const socket = io("https://mindscapebackend-9f2c807f920b.herokuapp.com", {
   withCredentials: true,
 });
 
