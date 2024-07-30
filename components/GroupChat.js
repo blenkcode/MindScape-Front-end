@@ -1,12 +1,21 @@
 import React, { useEffect, useState, useRef } from "react";
 import styles from "../styles/GroupChat.module.css";
-import io from "socket.io-client";
+
 import { useSelector } from "react-redux";
+
+import io from "socket.io-client";
 
 const socket = io("https://mindscapebackend-9f2c807f920b.herokuapp.com", {
   withCredentials: true,
 });
 
+socket.on("connect", () => {
+  console.log("connected to socket.io server");
+});
+
+socket.on("disconnect", () => {
+  console.log("disconnected from socket.io server");
+});
 const GroupChat = () => {
   const projectID = useSelector((state) => state.user.value.projectID);
   const [message, setMessage] = useState("");

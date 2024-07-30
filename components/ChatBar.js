@@ -3,12 +3,20 @@ import styles from "../styles/ChatBar.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { useSelector } from "react-redux";
+
 import io from "socket.io-client";
 
 const socket = io("https://mindscapebackend-9f2c807f920b.herokuapp.com", {
   withCredentials: true,
 });
 
+socket.on("connect", () => {
+  console.log("connected to socket.io server");
+});
+
+socket.on("disconnect", () => {
+  console.log("disconnected from socket.io server");
+});
 const ChatBar = () => {
   const [openChannels, setOpenChannels] = useState([]);
   const [activeChat, setActiveChat] = useState(null);
