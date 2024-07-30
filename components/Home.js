@@ -49,10 +49,7 @@ function Home() {
   const handleRegister = () => {
     fetch("https://mindscapebackend-9f2c807f920b.herokuapp.com/users/signup", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${token}`, // Utilisez le token ici si nécessaire
-      },
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name, password, email }),
     })
       .then((response) => {
@@ -82,10 +79,7 @@ function Home() {
   const handleConnexion = () => {
     fetch("https://mindscapebackend-9f2c807f920b.herokuapp.com/users/signin", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${token}`, // Utilisez le token ici si nécessaire
-      },
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ emailLogin, passwordLogin }),
     })
       .then((response) => response.json())
