@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 
 import io from "socket.io-client";
 
-const socket = io("https://mindscapebackend-9f2c807f920b.herokuapp.com", {
+const socket = io("https://mindscapebackend-9f2c807f920b.herokuapp.com/", {
   withCredentials: true,
 });
 
